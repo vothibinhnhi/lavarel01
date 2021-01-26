@@ -10,6 +10,7 @@ class category extends Model
     use HasFactory;
     protected $table ='Category';
     protected $filltable=[
+        ''
 
     ];
 }
