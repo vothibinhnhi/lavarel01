@@ -11,7 +11,11 @@ class Tin extends Model
     protected $table ='Tin';
     protected $filltable =[
         'thu_tu',
-        'the_loai',
-        'loai_tin',
+        'tieu_de',
+        'noi_dung',
+        'loaitin_id'
     ];
+    public function loaitin(){
+        return $this->belongsTo(LoaiTin::class);
+    }
 }
