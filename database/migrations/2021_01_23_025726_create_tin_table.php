@@ -18,8 +18,8 @@ class CreateTinTable extends Migration
             $table->unsignedBigInteger('loaitin_id');
             $table->foreign('loaitin_id')->references('id')->on('loaitin')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('thu_tu');
-            $table->string('the_loai');
-            $table->String('loai_tin');
+            $table->string('tieu_de');
+            $table->String('noi_dung');
             $table->timestamps();
         });
     }
