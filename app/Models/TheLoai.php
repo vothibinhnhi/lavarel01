@@ -9,7 +9,7 @@ class TheLoai extends Model
 {
     use HasFactory;
     protected $table ='TheLoai';
-    protected $filltable =[
+    protected $fillable =[
         'thu_tu',
         'tieu_de',
         'tieu_de_khong_dau',
